@@ -9,9 +9,14 @@ pool:
 stages:
   - stage: Build
     jobs:
-    - job: 
+    - job: job1
       steps:
       - powershell: echo "New line added"
-  
+  - stage: QA
+    jobs:   
+    - job: job2
+      steps:
+        - powershell: echo "2nd line added"
+
 
 
