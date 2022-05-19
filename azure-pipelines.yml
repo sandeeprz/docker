@@ -3,7 +3,7 @@ trigger:
 - master
 
 pool:
-  Azure Pipelines
+  myagent
   
 
 steps:
