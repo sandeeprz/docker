@@ -12,10 +12,6 @@ stages:
     - job: 
       steps:
       - bash: echo "New line added"
-  - task: CopyPublishBuildArtifacts@1
-    inputs:
-      CopyRoot: '$(Agent.BuildDirectory)'
-      ArtifactName: 'newart'
-      ArtifactType: 'FilePath'
+  
 
 
