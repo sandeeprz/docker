@@ -3,7 +3,8 @@ trigger:
 - master
 
 pool:
-  Hosted Agent
+  Azure Pipelines
+  
 
 steps:
 - script: echo Hello, world!
