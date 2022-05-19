@@ -6,8 +6,16 @@ pool:
   myagent
   
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+stages:
+  - stage: Build
+    jobs:
+    - job: 
+      steps:
+      - bash: echo "New line added"
+  - task: CopyPublishBuildArtifacts@1
+    inputs:
+      CopyRoot: '$(Agent.BuildDirectory)'
+      ArtifactName: 'newart'
+      ArtifactType: 'FilePath'
 
 
