@@ -3,7 +3,7 @@ trigger:
 - master
 
 pool:
-  myagent
+  ubuntu
   
 
 stages:
