@@ -11,12 +11,12 @@ stages:
     jobs:
     - job: job1
       steps:
-      - powershell: echo "New line added"
+      - bash: echo "New line added"
   - stage: QA
     jobs:   
     - job: job2
       steps:
-        - powershell: echo "2nd line added"
+        - bash: echo "2nd line added"
 
 
 
