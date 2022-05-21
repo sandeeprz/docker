@@ -19,7 +19,7 @@ stages:
       steps:
         - bash: echo "2nd line added"
   - stage: Dev
-    dependsOn: QA
+    dependsOn: Build
     jobs:   
     - job: job3
       steps:
