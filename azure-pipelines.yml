@@ -13,6 +13,7 @@ stages:
       steps:
       - bash: echo "New line added"
   - stage: QA
+    dependsOn: job1
     jobs:   
     - job: job2
       steps:
