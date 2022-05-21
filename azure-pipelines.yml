@@ -18,6 +18,12 @@ stages:
     - job: job2
       steps:
         - bash: echo "2nd line added"
+  - stage: Dev
+    dependsOn: QA
+    jobs:   
+    - job: job3
+      steps:
+        - bash: echo "3rd line added"
 
 
 
